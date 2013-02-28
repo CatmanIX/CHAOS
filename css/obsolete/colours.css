@@ -1,0 +1,21 @@
+a[href^='/'][href*='-mono'] { -webkit-filter: grayscale(1); }
+
+a[href^='/'][href*='-invert'] { -webkit-filter: invert(1); }
+
+a[href^='/'][href*='-ghost'] { -webkit-filter: opacity(0.5); }
+
+a[href^='/'][href*='-sepia'] { -webkit-filter: sepia(1); }
+
+a[href^='/'][href*='-h45'] { -webkit-filter: hue-rotate(45deg); }
+
+a[href^='/'][href*='-h90'] { -webkit-filter: hue-rotate(90deg); }
+
+a[href^='/'][href*='-h135'] { -webkit-filter: hue-rotate(135deg); }
+
+a[href^='/'][href*='-h180'] { -webkit-filter: hue-rotate(180deg); }
+
+a[href^='/'][href*='-h225'] { -webkit-filter: hue-rotate(225deg); }
+
+a[href^='/'][href*='-h270'] { -webkit-filter: hue-rotate(270deg); }
+
+a[href^='/'][href*='-h315'] { -webkit-filter: hue-rotate(315deg); }

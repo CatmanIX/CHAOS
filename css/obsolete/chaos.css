@@ -1,0 +1,35 @@
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg) scaleX(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -webkit-transform: rotate(0deg) scaleX(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg) scaleX(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -moz-transform: rotate(0deg) scaleX(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-ms-keyframes spin { from { -ms-transform: rotate(0deg) scaleX(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -ms-transform: rotate(0deg) scaleX(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-o-keyframes spin { from { -o-transform: rotate(0deg) scaleX(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -o-transform: rotate(0deg) scaleX(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@keyframes spin { from { transform: rotate(0deg) scaleX(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: rotate(0deg) scaleX(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-webkit-keyframes spin-flip { from { -webkit-transform: rotate(0deg) scaleX(-1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -webkit-transform: rotate(0deg) scaleX(-1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-moz-keyframes spin-flip { from { -moz-transform: rotate(0deg) scaleX(-1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -moz-transform: rotate(0deg) scaleX(-1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-ms-keyframes spin-flip { from { -ms-transform: rotate(0deg) scaleX(-1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -ms-transform: rotate(0deg) scaleX(-1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@-o-keyframes spin-flip { from { -o-transform: rotate(0deg) scaleX(-1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { -o-transform: rotate(0deg) scaleX(-1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+@keyframes spin-flip { from { transform: rotate(0deg) scaleX(-1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: rotate(0deg) scaleX(-1) rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+.bpflag-spin, .bpflag-flip.bpflag-dance.bpflag-spin:hover { -webkit-animation: "spin" 2s infinite linear; -moz-animation: "spin" 2s infinite linear; animation: "spin" 2s infinite linear; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast; }
+
+.bpflag-flip.bpflag-spin, .bpflag-dance.bpflag-spin:hover { -webkit-animation: "spin-flip" 2s infinite linear; -moz-animation: "spin-flip" 2s infinite linear; animation: "spin-flip" 2s infinite linear; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast; }
+
+/*end*/
