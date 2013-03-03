@@ -1,0 +1,32 @@
+@mixin mount($stalion, $ypos){
+.bpmote-#{$stalion}mount.bpflag-combine {
+	position: relative;
+	background-image: none;
+	&:before, &:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 301px;
+		height: 305px;
+		background-position: -0px -#{$ypos}px;
+	}
+	&:after {
+		z-index: 1;
+		background-image: url(http://d.thumbs.redditmedia.com/ZvWZGTMatFE1ct23.png);
+	}
+	&:before {
+		z-index: 3;
+		background-image: url(http://c.thumbs.redditmedia.com/ABqBucsFHteNCzlz.png);
+	}
+	+ a {
+		z-index: 2;
+		position: relative;
+		margin-right: -999px;
+		margin-bottom: -999px;
+		left: -207px;
+		top: 153px;
+	}
+}
+}

@@ -1,0 +1,61 @@
+//@import 'mounts';
+@import "compass";
+@import "mounts/back/*.png";
+@import "mounts/front/*.png";
+
+
+$mounters: ajtr bm chiv fp fpn orion soarin st whooves;
+$mounties: aj twi darkle dash shy rar pp;
+$mountleft: 0 -26px -26px -26px -18px -34px -10px;
+
+/*!! jizz */
+.bpmote-jizz.bpflag-combine {
+    z-index: 2;
+    position: relative;
+	+ a {
+		z-index: 1;
+		position: relative;
+		left: -110px;
+		top: -5px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+    }
+}
+
+/*!! mounts */
+@each $stalion in $mounters {
+.bpmote-#{$stalion}mount.bpflag-combine {
+	position: relative;
+	background-image: none;
+	&:before, &:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: front-sprite-width(#{$stalion});
+		height: front-sprite-height(#{$stalion});
+	}
+	//&::after {z-index: 1;}
+	//&::before {z-index: 3;}
+	&:after {@include back-sprite(#{$stalion});}
+	&:before {@include front-sprite(#{$stalion});}
+	+ a {
+		z-index: 2;
+		position: relative;
+		margin-right: -999px;
+		margin-bottom: -999px;
+		left: -207px;
+		top: 153px;
+	}
+	@each $pony in $mounties {
+	+ .bpmote-#{$pony}fun {
+		//@each $margin in $mountleft {
+	    margin-left: 0;
+		//}
+    }
+	}
+}
+}
+.back-sprite {z-index: 1;}
+.front-sprite {z-index: 3;}
