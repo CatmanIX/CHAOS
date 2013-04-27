@@ -1,8 +1,8 @@
-PROJECT HAS BEEN DROPPED BY THE CATMAN, CONSIDER ALL WORK RELEASED AS KOPYLEFT TO THE PUBLIC DOMAIN.
+PROJECT HAS BEEN DROPPED BY THE_CATMAN, CONSIDER ALL WORK RELEASED AS KOPYLEFT TO THE PUBLIC DOMAIN.
 ====================================================================================================
 
-DO WHAT THOUGH WILT
-===================
+DO WHAT THOU WILT
+=================
 
 ---
 
