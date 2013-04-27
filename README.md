@@ -1,3 +1,12 @@
+PROJECT HAS BEEN DROPPED BY THE CATMAN, CONSIDER ALL WORK RELEASED AS KOPYLEFT TO THE PUBLIC DOMAIN.
+====================================================================================================
+
+DO WHAT THOUGH WILT
+===================
+
+---
+
+
 CHAOS 2.0
 =========
 
