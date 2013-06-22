@@ -25,8 +25,8 @@
   @if (type-of($fallback) == color) or ($fallback == "transparent") {
     $fallback-color: $fallback;
   }
-
-  background-color: $fallback-color;
+/*
+  background-color: $fallback-color;*/ //this breaks gradient
   background-image: deprecated-webkit-gradient(linear, $deprecated-pos1, $deprecated-pos2, $full); // Safari <= 5.0
   background-image:  -webkit-linear-gradient($pos, $full); // Safari 5.1+, Chrome
   background-image:     -moz-linear-gradient($pos, $full);

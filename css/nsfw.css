@@ -1,0 +1,30 @@
+/*Pussy Table*/
+/* line 3, ../scss/nsfw.scss */
+a[href|="/applepussy"], a[href|="/trixiepussy"], a[href|="/flutterpussy"], a[href|="/rainbowpussy"], a[href|="/sparklepussy"], a[href|="/cheeripussy"], a[href|="/raripussy"], a[href|="/derpypussy"], a[href|="/pinkiepussy"] { background-image: url(http://b.thumbs.redditmedia.com/GUrfNHIaMEoN29eC.jpg); background-repeat: no-repeat; width: 300px; height: 360px; clear: none; display: block; float: left; }
+
+/* line 11, ../scss/nsfw.scss */
+a[href|="/applepussy"] { background-position: 0 0; }
+
+/* line 12, ../scss/nsfw.scss */
+a[href|="/trixiepussy"] { background-position: -300px 0; }
+
+/* line 13, ../scss/nsfw.scss */
+a[href|="/flutterpussy"] { background-position: -600px 0; }
+
+/* line 14, ../scss/nsfw.scss */
+a[href|="/rainbowpussy"] { background-position: 0 -360px; }
+
+/* line 15, ../scss/nsfw.scss */
+a[href|="/sparklepussy"] { background-position: -300px -360px; }
+
+/* line 16, ../scss/nsfw.scss */
+a[href|="/cheeripussy"] { background-position: -600px -360px; }
+
+/* line 17, ../scss/nsfw.scss */
+a[href|="/raripussy"] { background-position: 0 -720px; }
+
+/* line 18, ../scss/nsfw.scss */
+a[href|="/derpypussy"] { background-position: -300px -720px; }
+
+/* line 19, ../scss/nsfw.scss */
+a[href|="/pinkiepussy"] { background-position: -600px -720px; }

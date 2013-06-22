@@ -1,55 +1,167 @@
-/*
-Syntax error: File to import not found or unreadable: compass.
-              Load paths:
-                C:/git/CHAOS
-                C:/git/CHAOS/scss
-        on line 3 of scss/combiners-nsfw(sub).scss
+/* line 106, mounts/back/*.png */
+.back-sprite, a[href|="/ajtrmount-combine"]:after, a[href|="/bmmount-combine"]:after, a[href|="/chivmount-combine"]:after, a[href|="/fpmount-combine"]:after, a[href|="/fpnmount-combine"]:after, a[href|="/orionmount-combine"]:after, a[href|="/soarinmount-combine"]:after, a[href|="/stmount-combine"]:after, a[href|="/whoovesmount-combine"]:after { background: url('../images/mounts/back-s7946a384c3.png') no-repeat; }
 
-1: //@import 'mounts';
-2: //anomalies: art bryvood bshy celestia faust fleur gdb gio kdance luna petra pixel purple sphlyra sprakle willow zirconia
-3: @import "compass";
-4: @import "mounts/back/*.png";
-5: @import "mounts/front/*.png";
-6: 
-7: $stalions:     ajtr bm  chiv fp fpn orion soarin st whooves;
-8: $stalionshift: 0    -12 -12  0  0   0     0      0  0;
+/* line 106, mounts/front/*.png */
+.front-sprite, a[href|="/ajtrmount-combine"]:before, a[href|="/bmmount-combine"]:before, a[href|="/chivmount-combine"]:before, a[href|="/fpmount-combine"]:before, a[href|="/fpnmount-combine"]:before, a[href|="/orionmount-combine"]:before, a[href|="/soarinmount-combine"]:before, a[href|="/stmount-combine"]:before, a[href|="/whoovesmount-combine"]:before { background: url('../images/mounts/front-s2317d1891a.png') no-repeat; }
 
-Backtrace:
-scss/combiners-nsfw(sub).scss:3
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/plugin/compiler.rb:299:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `poll'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: compass.\A               Load paths:\A                 C:/git/CHAOS\A                 C:/git/CHAOS/scss\A         on line 3 of scss/combiners-nsfw(sub).scss\A \A 1: //@import 'mounts';\A 2: //anomalies: art bryvood bshy celestia faust fleur gdb gio kdance luna petra pixel purple sphlyra sprakle willow zirconia\A 3: @import \"compass\";\A 4: @import \"mounts/back/*.png\";\A 5: @import \"mounts/front/*.png\";\A 6: \A 7: $stalions:     ajtr bm  chiv fp fpn orion soarin st whooves;\A 8: $stalionshift: 0    -12 -12  0  0   0     0      0  0;"; }
+/*! jizz 
+.bpmote-jizz.bpflag-combine {
+	 z-index: 2;
+	 position: relative;
+	+ a {
+		z-index: 1;
+		position: relative;
+		left: -110px;
+		top: -5px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	 }
+}*/
+/*! mounts */
+/* line 31, ../scss/combiners-nsfw(sub).scss */
+.back-sprite, a[href|="/ajtrmount-combine"]:after, a[href|="/bmmount-combine"]:after, a[href|="/chivmount-combine"]:after, a[href|="/fpmount-combine"]:after, a[href|="/fpnmount-combine"]:after, a[href|="/orionmount-combine"]:after, a[href|="/soarinmount-combine"]:after, a[href|="/stmount-combine"]:after, a[href|="/whoovesmount-combine"]:after { z-index: 3; }
+
+/* line 32, ../scss/combiners-nsfw(sub).scss */
+.front-sprite, a[href|="/ajtrmount-combine"]:before, a[href|="/bmmount-combine"]:before, a[href|="/chivmount-combine"]:before, a[href|="/fpmount-combine"]:before, a[href|="/fpnmount-combine"]:before, a[href|="/orionmount-combine"]:before, a[href|="/soarinmount-combine"]:before, a[href|="/stmount-combine"]:before, a[href|="/whoovesmount-combine"]:before { z-index: 1; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/ajtrmount-combine"]:after { background-position: 0 -305px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/ajtrmount-combine"]:before { background-position: 0 -1525px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/ajtrmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/bmmount-combine"]:after { background-position: 0 -1220px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/bmmount-combine"]:before { background-position: 0 -2135px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/bmmount-combine"] + a { left: -219; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/chivmount-combine"]:after { background-position: 0 -1830px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/chivmount-combine"]:before { background-position: 0 -915px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/chivmount-combine"] + a { left: -219; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpmount-combine"]:after { background-position: 0 0; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpmount-combine"]:before { background-position: 0 -610px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpnmount-combine"]:after { background-position: 0 -610px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpnmount-combine"]:before { background-position: 0 -1830px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/fpnmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/orionmount-combine"]:after { background-position: 0 -2135px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/orionmount-combine"]:before { background-position: 0 -1220px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/orionmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/soarinmount-combine"]:after { background-position: 0 -915px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/soarinmount-combine"]:before { background-position: 0 0; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/soarinmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/stmount-combine"]:after { background-position: 0 -1525px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/stmount-combine"]:before { background-position: 0 -305px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/stmount-combine"] + a { left: -207; }
+
+/* line 35, ../scss/combiners-nsfw(sub).scss */
+a[href|="/whoovesmount-combine"]:after { background-position: 0 -2440px; width: 301px; height: 305px; }
+/* line 40, ../scss/combiners-nsfw(sub).scss */
+a[href|="/whoovesmount-combine"]:before { background-position: 0 -2440px; width: 301px; height: 305px; }
+/* line 45, ../scss/combiners-nsfw(sub).scss */
+a[href|="/whoovesmount-combine"] + a { left: -207; }
+
+/* line 51, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] { position: relative; background-image: none; }
+/* line 54, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"]:before, a[href*="mount-combine"]:after { display: block; content: ""; position: absolute; top: 0; left: 0; }
+/* line 61, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a { z-index: 2; position: relative; margin-right: -999px; margin-bottom: -999px; top: 153px; left: -207px; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/ajfun"] { margin-left: 2; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/twifun"] { margin-left: -24; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/darklefun"] { margin-left: -24; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/dashfun"] { margin-left: -22; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/shyfun"] { margin-left: -18; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/rarfun"] { margin-left: -32; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/ppfun"] { margin-left: -9; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/ajtrfun"] { margin-left: -2; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bajfun"] { margin-left: -5; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bbonfun"] { margin-left: -31; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bcheerfun"] { margin-left: -25; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bdashfun"] { margin-left: -32; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bderpfun"] { margin-left: -32; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/blyrafun"] { margin-left: -8; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bonfun"] { margin-left: -14; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/bppfun"] { margin-left: -15; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/braefun"] { margin-left: 2; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/brarfun"] { margin-left: -49; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/brosefun"] { margin-left: -7; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/btrixfun"] { margin-left: -30; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/cheerfun"] { margin-left: -15; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/darkfun"] { margin-left: 2; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/derpfun"] { margin-left: -12; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/doctorfun"] { margin-left: -1; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/espeefun"] { margin-left: -4; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/esplinfun"] { margin-left: 3; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/excelianfun"] { margin-left: -33; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/lyrafun"] { margin-left: 0; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/orschfun"] { margin-left: 4; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/rcrfun"] { margin-left: -25; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/rosefun"] { margin-left: 0; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/speedyfun"] { margin-left: 7; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/surfun"] { margin-left: -10; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/spraklefun"] { margin-left: -30; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/thunderlanefun"] { margin-left: 1; }
+/* line 70, ../scss/combiners-nsfw(sub).scss */
+a[href*="mount-combine"] + a[href|="/trixfun"] { margin-left: -12; }

@@ -1,1 +1,10 @@
-.bpmote-lickiepie.bpflag-combine+a{position:relative;left:-220px;top:127px;margin-right:-220px}.bpmote-emptytable.bpflag-combine{z-index:2;position:relativea;position-z-index:1;position-position:relative;position-margin-right:-999px;position-margin-bottom:-999px;position-left:-120px;position-top:20px;position-max-height:119px}.bpmote-emptytable.bpflag-combine+a[href^="/pp"].bpflag-combine+a{width:150px;position:relative;left:14px;top:5px}
+/* Some SFW portions of combiners. They are included here so that combiners-nsfw.css can be disabled with the NSFW option. */
+/* lickiepie */
+/* line 7, ../scss/combiners-sfw.scss */
+.bpmote-lickiepie.bpflag-combine + a { position: relative; left: -220px; top: 127px; margin-right: -220px; }
+
+/* tableflip */
+/* line 14, ../scss/combiners-sfw.scss */
+.bpmote-emptytable.bpflag-combine { z-index: 2; position: relativea; position-z-index: 1; position-position: relative; position-margin-right: -999px; position-margin-bottom: -999px; position-left: -120px; position-top: 20px; position-max-height: 119px; /* fixes */ }
+/* line 28, ../scss/combiners-sfw.scss */
+.bpmote-emptytable.bpflag-combine + a[href^="/pp"].bpflag-combine + a { width: 150px; position: relative; left: 14px; top: 5px; }
