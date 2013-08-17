@@ -1,0 +1,266 @@
+/*layout2*/
+
+#banner {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/banner.png) no-repeat center;
+height:138px;
+margin:32px auto;
+width:786px;
+}
+
+#chatControls #flairArrow {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/flairow.png) no-repeat scroll left center transparent;
+border-color:gray;
+border-style:solid solid solid none;
+border-width:1px 1px 1px 0;
+float:left;
+height:16px;
+margin:1px 10px 1px 0;
+width:10px;
+}
+
+#chatControls a,#playlistAddControls .note {
+color:#dbeffa;
+}
+
+#chatControls,#connectedCountWrapper {
+background-color:#125!important;
+color:#dbeffa!important;
+}
+
+#chatbuffer .message.drink {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/bp_tiny.png) no-repeat scroll right center transparent;
+margin-right: 30px;
+}
+
+#chatinput input {
+background-color:#111;
+color:#dbeffa!important;
+}
+
+#chatinput.right {
+border-right:1px red!important;
+}
+
+#chatinput.right input {
+border-right:1px #FFF!important;
+}
+
+#chatlist {
+background:none repeat scroll 0 0 #111!important;
+border-left-color:#dbeffa!important;
+border-left-width:1px!important;
+border-top-color:#dbeffa!important;
+border-top-width:1px!important;
+color:#dbeffa!important;
+}
+
+#chatlist ul .admin,.flaunt.level_2 {
+color:#704ac0;
+}
+
+#chatlist ul .anon,.flaunt.level_0 {
+color:#584d69;
+}
+
+#chatlist ul .leader {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/star.png) no-repeat scroll left center transparent;
+height:20px;
+line-height:20px;
+padding-left:25px;
+padding-right:10px;
+}
+
+#chatlist ul .mod,.flaunt.level_1 {
+color:#48c;
+}
+
+#chatlist ul .nobody,.flaunt.level_-1 {
+color:#5b5b5b;
+}
+
+#chatpane .setNick {
+background-color:#125!important;
+border-color:#dbeffa;
+color:#dbeffa!important;
+}
+
+#connectedCountWrapper {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/collapse.png) no-repeat 2px center;
+cursor:pointer;
+}
+
+#connectedCountWrapper.wide {
+background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/expand.png);
+}
+
+#drinkWrap {
+vertical-align:middle;
+}
+
+#dyn_footer {
+margin-top:15px;
+}
+
+#playlist .thumb .end,#playlist .thumb {
+background-color:#48c;
+}
+
+#playlist .track {
+background:#111 url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/nub.png) repeat-x 0 0;
+border-left:1px solid #125;
+border-right:1px solid #125;
+}
+
+#playlist li .setVolatile.visible {
+border:1px solid;
+color:#FF0;
+}
+
+#playlist ul .delete,#playlist ul .requeue {
+background:none repeat scroll 0 0 #111;
+border:1px solid #dbeffa;
+color:#dbeffa;
+}
+
+#playlist ul li {
+background:none repeat scroll 0 0 #111;
+border:1px solid #125;
+cursor:ns-resize;
+font-family:Arial;
+}
+
+#playlist ul li.active {
+background:none repeat scroll 0 0 #125;
+border-color:#dbeffa;
+color:#dbeffa;
+}
+
+#playlist ul li.volatile {
+background:none repeat scroll 0 0 #111;
+border-color:#22c;
+color:#dbeffa;
+}
+
+#playlist ul li.volatile.active {
+background:none repeat scroll 0 0 #125;
+border:1px solid #22c;
+color:#dbeffa;
+}
+
+#playlistAddControls .import input {
+background:none repeat scroll 0 0 #111;
+color:#dbeffa;
+}
+
+#playlistAddControls .slideBtn {
+background:#111;
+border:1px solid #dbeffa;
+color:#dbeffa;
+}
+
+#playlistAddControls,#playlistAddControls .import {
+display:none;
+}
+
+#pollControl {
+background:#111!important;
+border-top:1px #FFF!important;
+color:#FFF!important;
+}
+
+#pollpane .poll {
+background-color:rgba(17,34,85,0.5);
+border:0!important;
+}
+
+#v {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/vomit.gif);
+display:none;
+height:324px;
+margin:0 auto;
+width:400px;
+}
+
+#videobg {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/player_back.png) no-repeat center center;
+}
+
+.chatbuffer {
+background:none repeat scroll 0 0 #111!important;
+border-bottom:1px #dbeffa!important;
+border-bottom-color:#FFF!important;
+border-left-color:#dbeffa!important;
+border-left-width:1px!important;
+border-top:1px #dbeffa!important;
+border-top-color:#dbeffa!important;
+border-top-width:1px!important;
+color:#dbeffa!important;
+}
+
+.chatbuffer .drinkWrap {
+border-bottom:3px solid #48c!important;
+border-top:3px solid #48c!important;
+}
+
+.chatbuffer .drinkWrap td {
+height:42px;
+vertical-align:middle;
+}
+
+.chatbuffer .highlight {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/beep.png);
+}
+
+.chatbuffer .message.request {
+color:#48c;
+font-style:italic;
+font-weight:700;
+}
+
+.chatbuffer .pollNote,.chatbuffer .message.rcv,#rcvOverlay .message.rcv {
+color:#704ac0!important;
+}
+
+.chatbuffer a {
+color:#0fb4ff;
+}
+
+.chatbuffer a:visited {
+color:#00527e;
+}
+
+.dynarea a {
+color:#0fb4ff!important;
+}
+
+.dynarea a:visited {
+color:#00659b!important;
+}
+
+.dynarea,#dyn_motd {
+background-color:rgba(17,34,85,0.5);
+border:0!important;
+color:#dbeffa;
+}
+
+.poll.active,.poll .btn.close {
+background:#125!important;
+}
+
+.spoiler .msg {
+background:none repeat scroll 0 0 #FFF;
+color:#FFF;
+}
+
+.spoiler .msg:hover {
+color:#111;
+}
+
+.wrapper {
+margin-bottom:15px!important;
+}
+
+body {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/starfeild.png) no-repeat fixed #111;
+color:#FFF;
+}
