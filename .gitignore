@@ -1,8 +1,9 @@
 .sass-cache/
 .DS_Store
 .DS_Store?
-._*
-_*
+bourbon/*
+base/*
+neat/*
 .Spotlight-V100
 .Trashes
 Icon?

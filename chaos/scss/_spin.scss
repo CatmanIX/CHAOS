@@ -1,0 +1,106 @@
+@import "bourbon/bourbon";
+
+/*!! == spins == */
+@mixin keys($deg) {
+@include keyframes(_excl_spin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_spin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_xzspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_xzspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_yzspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateY(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_yzspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateY(360deg)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_zspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(0deg))}}
+@include keyframes(_excl_zspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(360deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(0deg))}}
+@include keyframes(spin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))}}
+@include keyframes(spin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))}}
+@include keyframes(xspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg))}}
+@include keyframes(xspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg))}}
+@include keyframes(xyspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg)rotateY(360deg))}}
+@include keyframes(xyspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg)rotateY(360deg))}}
+@include keyframes(xzspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(0deg)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateX(360deg)rotateZ(360deg))}}
+@include keyframes(xzspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(0deg)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateX(360deg)rotateZ(360deg))}}
+@include keyframes(yspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateY(360deg))}}
+@include keyframes(yspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateY(360deg))}}
+@include keyframes(yzspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(0deg)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(360deg)rotateY(360deg))}}
+@include keyframes(yzspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(0deg)rotateY(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(360deg)rotateY(360deg))}}
+@include keyframes(zspin-r#{$deg}) {from{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(1)rotateZ(360deg))}}
+@include keyframes(zspin-r#{$deg}-flip) {from{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(0deg))} to{@include transform(rotate(#{$deg}deg)scaleX(-1)rotateZ(360deg))}}
+}
+
+@mixin flags($deg) {
+.bpflag-r#{$deg}.bpflag-_excl_spin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-_excl_spin:hover {@include animation(_excl_spin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-_excl_spin, .bpflag-r#{$deg}.bpflag-dance.bpflag-_excl_spin:hover {@include animation(_excl_spin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-_excl_xzspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-_excl_xzspin:hover {@include animation(_excl_xzspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-_excl_xzspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-_excl_xzspin:hover {@include animation(_excl_xzspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-_excl_yzspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-_excl_yzspin:hover {@include animation(_excl_yzspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-_excl_yzspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-_excl_yzspin:hover {@include animation(_excl_yzspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-_excl_zspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-_excl_zspin:hover {@include animation(_excl_zspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-_excl_zspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-_excl_zspin:hover {@include animation(_excl_zspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-spin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-spin:hover {@include animation(spin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-spin, .bpflag-r#{$deg}.bpflag-dance.bpflag-spin:hover {@include animation(spin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-xspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-xspin:hover {@include animation(xspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-xspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-xspin:hover {@include animation(xspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-xyspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-xyspin:hover {@include animation(xyspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-xyspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-xyspin:hover {@include animation(xyspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-xzspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-xzspin:hover {@include animation(xzspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-xzspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-xzspin:hover {@include animation(xzspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-yspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-yspin:hover {@include animation(yspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-yspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-yspin:hover {@include animation(yspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-yzspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-yzspin:hover {@include animation(yzspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-yzspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-yzspin:hover {@include animation(yzspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-zspin, .bpflag-r#{$deg}.bpflag-flip.bpflag-dance.bpflag-zspin:hover {@include animation(zspin-r#{$deg} 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-r#{$deg}.bpflag-flip.bpflag-zspin, .bpflag-r#{$deg}.bpflag-dance.bpflag-zspin:hover {@include animation(zspin-r#{$deg}-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+}
+
+/*keys*/
+@include keyframes(_excl_spin) {from{@include transform(scaleX(1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))} to{@include transform(scaleX(1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_spin-flip) {from{@include transform(scaleX(-1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))} to{@include transform(scaleX(-1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_xzspin) {from{@include transform(scaleX(1)rotateX(360deg)rotateZ(360deg))} to{@include transform(scaleX(1)rotateX(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_xzspin-flip) {from{@include transform(scaleX(-1)rotateX(360deg)rotateZ(360deg))} to{@include transform(scaleX(-1)rotateX(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_yzspin) {from{@include transform(scaleX(1)rotateY(360deg)rotateZ(360deg))} to{@include transform(scaleX(1)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_yzspin-flip) {from{@include transform(scaleX(-1)rotateY(360deg)rotateZ(360deg))} to{@include transform(scaleX(-1)rotateY(0deg)rotateZ(0deg))}}
+@include keyframes(_excl_zspin) {from{@include transform(scaleX(1)rotateZ(360deg))} to{@include transform(scaleX(1)rotateZ(0deg))}}
+@include keyframes(_excl_zspin-flip) {from{@include transform(scaleX(-1)rotateZ(360deg))} to{@include transform(scaleX(-1)rotateZ(0deg))}}
+@include keyframes(spin) {from{@include transform(scaleX(1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))} to{@include transform(scaleX(1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))}}
+@include keyframes(spin-flip) {from{@include transform(scaleX(-1)rotateX(0deg)rotateY(0deg)rotateZ(0deg))} to{@include transform(scaleX(-1)rotateX(360deg)rotateY(360deg)rotateZ(360deg))}}
+@include keyframes(xspin) {from{@include transform(scaleX(1)rotateX(0deg))} to{@include transform(scaleX(1)rotateX(360deg))}}
+@include keyframes(xspin-flip) {from{@include transform(scaleX(-1)rotateX(0deg))} to{@include transform(scaleX(-1)rotateX(360deg))}}
+@include keyframes(xyspin) {from{@include transform(scaleX(1)rotateX(0deg)rotateY(0deg))} to{@include transform(scaleX(1)rotateX(360deg)rotateY(360deg))}}
+@include keyframes(xyspin-flip) {from{@include transform(scaleX(-1)rotateX(0deg)rotateY(0deg))} to{@include transform(scaleX(-1)rotateX(360deg)rotateY(360deg))}}
+@include keyframes(xzspin) {from{@include transform(scaleX(1)rotateX(0deg)rotateZ(0deg))} to{@include transform(scaleX(1)rotateX(360deg)rotateZ(360deg))}}
+@include keyframes(xzspin-flip) {from{@include transform(scaleX(-1)rotateX(0deg)rotateZ(0deg))} to{@include transform(scaleX(-1)rotateX(360deg)rotateZ(360deg))}}
+@include keyframes(yspin) {from{@include transform(scaleX(1)rotateY(0deg))} to{@include transform(scaleX(1)rotateY(360deg))}}
+@include keyframes(yspin-flip) {from{@include transform(scaleX(-1)rotateY(0deg))} to{@include transform(scaleX(-1)rotateY(360deg))}}
+@include keyframes(yzspin) {from{@include transform(scaleX(1)rotateZ(0deg)rotateY(0deg))} to{@include transform(scaleX(1)rotateZ(360deg)rotateY(360deg))}}
+@include keyframes(yzspin-flip) {from{@include transform(scaleX(-1)rotateZ(0deg)rotateY(0deg))} to{@include transform(scaleX(-1)rotateZ(360deg)rotateY(360deg))}}
+@include keyframes(zspin) {from{@include transform(scaleX(1)rotateZ(0deg))} to{@include transform(scaleX(1)rotateZ(360deg))}}
+@include keyframes(zspin-flip) {from{@include transform(scaleX(-1)rotateZ(0deg))} to{@include transform(scaleX(-1)rotateZ(360deg))}}
+@for $i from 0 to 360 {
+	@include keys($i);
+}
+
+/*flags*/
+.bpflag-_excl_spin, .bpflag-flip.bpflag-dance.bpflag-_excl_spin:hover {@include animation(_excl_spin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-_excl_spin, .bpflag-dance.bpflag-_excl_spin:hover {@include animation(_excl_spin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-_excl_xzspin, .bpflag-flip.bpflag-dance.bpflag-_excl_xzspin:hover {@include animation(_excl_xzspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-_excl_xzspin, .bpflag-dance.bpflag-_excl_xzspin:hover {@include animation(_excl_xzspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-_excl_yzspin, .bpflag-flip.bpflag-dance.bpflag-_excl_yzspin:hover {@include animation(_excl_yzspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-_excl_yzspin, .bpflag-dance.bpflag-_excl_yzspin:hover {@include animation(_excl_yzspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-_excl_zspin, .bpflag-flip.bpflag-dance.bpflag-_excl_zspin:hover {@include animation(_excl_zspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-_excl_zspin, .bpflag-dance.bpflag-_excl_zspin:hover {@include animation(_excl_zspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-spin, .bpflag-flip.bpflag-dance.bpflag-spin:hover {@include animation(spin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-spin, .bpflag-dance.bpflag-spin:hover {@include animation(spin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-xspin, .bpflag-flip.bpflag-dance.bpflag-xspin:hover {@include animation(xspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-xspin, .bpflag-dance.bpflag-xspin:hover {@include animation(xspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-xyspin, .bpflag-flip.bpflag-dance.bpflag-xyspin:hover {@include animation(xyspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-xyspin, .bpflag-dance.bpflag-xyspin:hover {@include animation(xyspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-xzspin, .bpflag-flip.bpflag-dance.bpflag-xzspin:hover {@include animation(xzspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-xzspin, .bpflag-dance.bpflag-xzspin:hover {@include animation(xzspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-yspin, .bpflag-flip.bpflag-dance.bpflag-yspin:hover {@include animation(yspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-yspin, .bpflag-dance.bpflag-yspin:hover {@include animation(yspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-yzspin, .bpflag-flip.bpflag-dance.bpflag-yzspin:hover {@include animation(yzspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-yzspin, .bpflag-dance.bpflag-yzspin:hover {@include animation(yzspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-zspin, .bpflag-flip.bpflag-dance.bpflag-zspin:hover {@include animation(zspin 2s infinite linear);@include image-rendering(optimize-contrast);}
+.bpflag-flip.bpflag-zspin, .bpflag-dance.bpflag-zspin:hover {@include animation(zspin-flip 2s infinite linear);@include image-rendering(optimize-contrast);}
+@for $i from 0 to 360 {
+	@include flags($i);
+}

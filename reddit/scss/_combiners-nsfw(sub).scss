@@ -1,0 +1,74 @@
+//@import 'mounts';
+//anomalies: art bryvood bshy celestia faust fleur gdb gio kdance luna petra pixel purple sphlyra sprakle willow zirconia
+@import "compass";
+@import "mounts/back/*.png";
+@import "mounts/front/*.png";
+
+$stalions:     ajtr bm  chiv fp fpn orion soarin st whooves;
+$stalionshift: 0    -12 -12  0  0   0     0      0  0;
+
+$mares:     aj twi darkle dash shy rar pp ajtr baj bbon bcheer bdash bderp blyra bon bpp brae brar brose btrix cheer dark derp doctor espee esplin excelian lyra orsch rcr rose speedy sur sprakle thunderlane trix;
+$mareshift: 2  -24 -24    -22  -18 -32 -9 -2   -5  -31  -25    -32   -32   -8    -14 -15 2    -49  -7    -30   -15   2    -12  -1     -4    3      -33      0    4     -25 0    7      -10 -30     1           -12;
+
+$stalionttl: length($stalions);
+$marettl: length($mares);
+
+/*!! jizz 
+.bpmote-jizz.bpflag-combine {
+	 z-index: 2;
+	 position: relative;
+	+ a {
+		z-index: 1;
+		position: relative;
+		left: -110px;
+		top: -5px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	 }
+}*/
+
+/*!! mounts */
+.back-sprite {z-index: 3;}
+.front-sprite {z-index: 1;}
+@for $num1 from 1 through $stalionttl {
+a[href|="/#{nth($stalions, $num1)}mount-combine"] {
+	&:after {
+		@include back-sprite(#{nth($stalions, $num1)});
+		width: back-sprite-width(#{nth($stalions, $num1)});
+		height: back-sprite-height(#{nth($stalions, $num1)});
+	}
+	&:before {
+		@include front-sprite(#{nth($stalions, $num1)});
+		width: front-sprite-width(#{nth($stalions, $num1)});
+		height: front-sprite-height(#{nth($stalions, $num1)});
+	}
+	+ a {
+		left: -207+nth($stalionshift, $num1);
+	}
+}
+}
+
+a[href*="mount-combine"]{
+	position: relative;
+	background-image: none;
+	&:before, &:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	+ a {
+		z-index: 2;
+		position: relative;
+		margin-right: -999px;
+		margin-bottom: -999px;
+		top: 153px;
+		left: -207px;
+	}
+	@for $num2 from 1 through $marettl {
+		+ a[href|="/#{nth($mares, $num2)}fun"] {
+			margin-left: nth($mareshift, $num2);
+		}
+	}
+}

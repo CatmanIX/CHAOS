@@ -1,0 +1,19 @@
+@mixin catframes($name) {
+
+  @if ($prefix == -webkit-) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if ($prefix == -moz-) {
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if ($prefix == -o-) {
+    @-o-keyframes #{$name} {
+      @content;
+    }
+  }
+  
+}

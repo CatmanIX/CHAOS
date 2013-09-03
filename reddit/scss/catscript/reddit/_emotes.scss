@@ -1,0 +1,20 @@
+// Template for adding emotes.
+@import "compass";
+
+
+@mixin emote($name, $list, $map/*: unquote("$" + #{$list} + "-map")*/) {
+	@each $emote in $list {
+		@each $emotename in $emote {
+			a[href|="/#{$emotename}"], {
+				background-image: url(%%#{$name}.png%%);
+				display: block;
+				clear: none;
+				float: left;
+			}
+			a[href|="/#{$emotename}"], {
+				@include sprite($map, #{nth($emote, 1)}, true);
+				/*content: $map;*/
+			}
+		}
+	}
+}
