@@ -1,0 +1,11 @@
+@import "compass";
+@import "catscript/catscript";
+
+$gdi-map: sprite-map("/mylittlechaos/gdi/*.png");
+$gdi-list: tsgdi, lpgdi, rdgdi test, ajgdi, bpgdi;
+
+/* Mixin */
+
+/* Account Icons */
+@include emote(gdi, $gdi-list, $gdi-map);
+
