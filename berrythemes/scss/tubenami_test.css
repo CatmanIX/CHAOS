@@ -1,0 +1,203 @@
+/*Test Bits*//*
+#drinkwrap, #v, #playlistAddControls, #pollControl {display: block !important}
+
+#adminRainbow, #playlist ul .delete, #playlist ul .requeue {display: inline-block !important}
+*/
+
+#playlistAddControls, #pollControl {display: block !important}
+
+/*Body*/
+body {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/starfeild.png) no-repeat fixed #111;
+color:#DEF;
+}
+
+#banner {
+background:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/banner_TEST.png) no-repeat center;
+height:138px;
+margin:32px auto;
+width:786px;
+}
+
+#dyn_motd, .dynarea {
+background-color:rgba(17,34,102,0.5);
+border:1px solid #DEF;
+color:#DEF;
+}
+
+#t td {color: #DEF}
+#headbar, center {margin:15px 0!important}
+.dynarea a, .dynarea a:visited {color:#2BE!important}
+#dyn_motd, #dyn_footer {margin-top:-1px}
+#toastThemesContainer .settingsButtonDiv {color: #FFF}
+
+
+/*Video*/
+#videobg {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/player_back_dan.png)}
+
+
+/*Drink*/
+#drinkWrap {background-image: url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/drink_back.png)}
+
+#v {
+background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/vomit.gif);
+height:324px;
+width:400px;
+}
+
+
+/*Playlist*/
+#playlist {
+background:#111;
+border: 1px solid #DEF;
+margin-left: -1px;
+}
+
+#playlistAddControls {
+margin-left: -1px;
+margin-bottom: -1px;
+}
+
+.layout_compact #playlistAddControls {width: 693px}
+.layout_hd #playlistAddControls {width: 510px}
+
+#playlistAddControls, #playlistAddControls .import input {
+background:#111;
+border:1px solid #DEF;
+color:#DEF;
+}
+
+#playlistAddControls .slideBtn, #playlistAddControls .impele.btn {
+background: #126;
+color: #DEF;
+border:1px solid #DEF;
+}
+
+#playlistAddControls .note {
+background:#111;
+color:#DEF;
+}
+
+#playlist .track {
+background:#111 url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/nub.png) repeat-x 0 0;
+border-left:1px solid #126;
+}
+
+#playlist .thumb .end,#playlist .thumb {background-color:#2BE}
+
+#playlist ul .delete,#playlist ul .requeue {
+background-color: #111;
+border:1px solid #DEF;
+color:#DEF;
+}
+
+#playlist ul li {
+background-color: #111;
+border:1px solid #126;
+color:#DEF;
+}
+
+#playlist ul li.active {
+background-color: #126;
+border-color:#DEF;
+color:#DEF;
+}
+
+#playlist ul li.volatile {
+background-color: #111;
+border-color:#2BE;
+color:#DEF;
+}
+
+#playlist ul li.volatile.active {
+background-color: #126;
+border:1px solid #2BE;
+color:#DEF;
+}
+
+#plstats {
+background: #126;
+border-top: 1px solid #DEF;
+}
+
+/*Chat*/
+#chatpane {border: 1px solid #DEF}
+#chatControls,#connectedCountWrapper {background-color:#126!important;color:#DEF!important;}
+#chatControls #flairArrow {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/flairow.png)}
+#connectedCountWrapper {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/collapse.png)}
+#connectedCountWrapper.wide {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/expand.png)}
+
+.chatbuffer {
+background-color: #111!important;
+border-bottom:1px #DEF!important;
+border-top:1px #DEF!important;
+color:#DEF!important;
+}
+
+#chatbuffer .message.drink {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/bp_tiny.png)}
+.chatbuffer .drinkWrap {border-bottom:3px solid #2BE!important;border-top:3px solid #2BE!important;}
+.chatbuffer a {color:#2BE}
+.chatbuffer a:visited {color:#039}
+.chatbuffer .highlight {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/beep.png)}
+.chatbuffer .message.request {color:#2BE}
+.chatbuffer .pollNote,.chatbuffer .message.rcv,#rcvOverlay .message.rcv {color:#2be!important}
+.spoiler .msg * {background-color:#DEF !important;color:#DEF !important;}
+.spoiler .msg:hover * {color:#111 !important;}
+
+
+#chatinput input {
+background-color:#111;
+color:#DEF!important;
+}
+
+#chatpane .setNick {
+background-color:#126!important;
+border-color:#DEF;
+color:#DEF!important;
+}
+
+#adminRainbow {background-color:#111}
+#adminRainbow span {color:#44E !important}
+
+#chatlist {
+background-color: #111!important;
+border-left:1px #DEF!important;
+border-top:1px #DEF!important;
+border-bottom:0;
+color:#DEF!important;
+}
+
+#chatlist ul .admin,.flaunt.level_2 {color:#44E}
+#chatlist ul .mod,.flaunt.level_1 {color:#2BE}
+#chatlist ul .anon,.flaunt.level_0 {color:#555}
+#chatlist ul .leader {background-image:url(https://dl.dropboxusercontent.com/u/28101770/Tubenami/star.png)}
+
+
+/*Poll*/
+#pollControl {
+background:#111!important;
+border:1px solid #DEF!important;
+color:#DEF!important;
+margin-top: -1px
+}
+
+#pollControl .btn {
+background-color: #126!important;
+color: #DEF!important
+}
+
+.poll.active {
+background:rgba(17,34,102,0.5) !important;
+}
+
+/*.poll.active .btn {color:#2be; border-color:#def}*/
+
+
+#pollpane .poll {
+background-color:rgba(17,17,17,0.5);
+border:1px solid #DEF !important;
+margin: 0!important;
+margin-top: -1px!important;
+}
+
+.poll .btn.close {background-color:#111 !important}
