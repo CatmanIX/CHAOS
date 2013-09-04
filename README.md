@@ -1,5 +1,4 @@
-Miscellaneous CSS Projects
-==========================
+#Miscellaneous CSS Projects
 
 I don't see much point in making a bunch of different repos for this, so here they all are in one convenient place.
 

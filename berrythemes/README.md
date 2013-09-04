@@ -1,7 +1,6 @@
-BerrTbe Themes
-==============
+##BerrTbe Themes
 
-#Tubenami: Toonami styled theme for BerryTube, made for Tubenami with Jerick on Wednesday nights.
+####Tubenami: Toonami styled theme for BerryTube, made for Tubenami with Jerick on Wednesday nights.
 
 TODO:
 

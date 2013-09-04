@@ -1,5 +1,4 @@
-PROJECT CHAOS (2.0)
-===================
+##PROJECT CHAOS (2.0)
 
 I don't work on this much any more, but I do plan on picking it back up later. (We can rebuild it! Harder, better, faster, stronger!)
 
@@ -7,7 +6,7 @@ For now it's officially "dropped" and has been switched from a Creative Commons 
 
 (Apologies for the mess, I'll clean it up some day....) 
 
-#Old Description
+###Old Description
 
 ***The next generation of CHAOS!***
 
@@ -18,7 +17,7 @@ This project is compiled using [Compass](http://compass-style.org/), [Bourbon](h
 Likely to be extremely incompatible with CHAOS 1.0, backwards compatibility is a drag.
 
 
-#LICENSE
+###LICENSE
 
-###(cc) BY-NC 3.0 Unported 2012 by The_Catman. Some rights reserved.
-###(K) Kopyleft 2013 by The_Catman. Do what thou wilt shall be the whole of the license.
+**(cc) BY-NC 3.0 Unported 2012 by The_Catman. Some rights reserved.**
+**(K) Kopyleft 2013 by The_Catman. Do what thou wilt shall be the whole of the license.**
