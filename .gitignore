@@ -19,6 +19,9 @@ Icon
 
 #SASS
 *.sass-cache
+bourbon/
+base/
+neat/
 
 #misc
 rem
