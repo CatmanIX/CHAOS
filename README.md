@@ -1,13 +1,26 @@
-#Miscellaneous CSS Projects
+#Miscellaneous Web Projects
 
-I don't see much point in making a bunch of different repos for this, so here they all are in one convenient place.
-
-Currently contains:
-
-* BerryTube Themes: for http://berrytube.tv, check 'em out in ToastThemes.
-
-* reddit: CSS for some of my subreddits, probably outdated.
-
-* CHAOS: make reddit emotes do things and stuff (unmaintained). Used in BPM, Berrymotes, and others.
+**All my Web projects in one convenient repository.**
 
 ![CSS](http://i.imgur.com/hw7lhJv.gif)
+
+
+###Projects:
+
+* **BerryThemes**: Add a bit of colour to your life as you get drunk alone on the internet watching ponies.
+* **CHAOS 2.0**: Second generation modification flags for reddit emotes, served with horse juice.
+* **reddit Styles**: Stylesheets for some subreddits, clever description not included.
+
+
+####*May contain trace amounts of:
+
+* [Compass](http://compass-style.org/)
+* [Bourbon](http://bourbon.io/)
+* [Neat](http://neat.bourbon.io/)
+* [Juice](https://github.com/CatmanIX/juice)
+* [Clean-CSS](https://github.com/GoalSmashers/clean-css)
+* [Enhance-CSS](https://github.com/GoalSmashers/enhance-css)
+* [CoffeeScript](http://coffeescript.org/)
+
+
+
