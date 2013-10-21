@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Miscellaneous Web Projects
 
 **All my Web projects in one convenient repository.**
@@ -24,3 +25,9 @@
 
 
 
+=======
+juice
+=====
+
+this might be a thing, if it isn't, pretend it never existed
+>>>>>>> 70ed6e674705f6de7f9421bdb408863b16ced1a1

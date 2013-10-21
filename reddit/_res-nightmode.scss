@@ -1,0 +1,13 @@
+// Easy to use fixes for Reddit Enhancment Suite's Nightmode
+
+@mixin nightmode($selector) {
+	@if ($selector == 1) {
+		.res-nightmode {
+			@content
+		}
+	} @else {
+		#{$selector}, #{$selector}.res-nightmode {
+			@content
+		}
+	}
+}
