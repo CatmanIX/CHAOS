@@ -1,3 +1,12 @@
 [submodule "scss/juice"]
 	path = scss/juice
 	url = https://github.com/CatmanIX/juice.git
+[submodule "scss/bourbon"]
+	path = scss/bourbon
+	url = https://github.com/CoRD-Dev/libbourbon.git
+[submodule "scss/neat"]
+	path = scss/neat
+	url = https://github.com/CoRD-Dev/libneat.git
+[submodule "scss/base"]
+	path = scss/base
+	url = https://github.com/CoRD-Dev/libbitters.git
