@@ -1,6 +1,6 @@
 [submodule "scss/juice"]
 	path = scss/juice
-	url = https://github.com/CatmanIX/juice.git
+	url = https://github.com/CoRD-Dev/libjuice.git
 [submodule "scss/bourbon"]
 	path = scss/bourbon
 	url = https://github.com/CoRD-Dev/libbourbon.git
