@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Miscellaneous Web Projects
 
 **All my Web projects in one convenient repository.**
@@ -22,12 +21,3 @@
 * [Clean-CSS](https://github.com/GoalSmashers/clean-css)
 * [Enhance-CSS](https://github.com/GoalSmashers/enhance-css)
 * [CoffeeScript](http://coffeescript.org/)
-
-
-
-=======
-juice
-=====
-
-this might be a thing, if it isn't, pretend it never existed
->>>>>>> 70ed6e674705f6de7f9421bdb408863b16ced1a1
