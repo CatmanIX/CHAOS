@@ -1,8 +1,8 @@
 #Miscellaneous Web Projects
 
-**All my Web projects in one convenient repository.**
+**All my web projects in one convenient repository.**
 
-![CSS](http://i.imgur.com/hw7lhJv.gif)
+![CSS](http://i.imgur.com/SFiKiLI.gif)
 
 
 ###Projects:
